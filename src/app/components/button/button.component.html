@@ -1,1 +1,8 @@
-<button class="btn">Click</button>
+<button [ngStyle]="{'background-color': color}"
+ class="btn"
+ (btnClick)="toggleAddTask()"
+ >
+ 
+ {{ text }}
+
+</button>
